@@ -22,14 +22,6 @@ build new ingestion pipelines without have write any JSON in the configuration f
 - conf folder - these are the properties for defining the data endpoint source, data connection adapter and sink which is the target to copy data to.
 
 
-## Framework challenges and epics
-
-Build using Bootstrap v3, Node v6, Angular v2.4
-
-Do not use JQuery code.
-Stick to Bootstrap style css as close as possible.
-
-
 ## Docker
 
 There is a docker image to run Kafka broker on your localhost:2181.
@@ -58,6 +50,14 @@ Run the consumer giving topic…..
 
 The JSConnect source adpaters code will need to be run to send message to the store topic. We need to write some code to send mock messages to this topic.
 
+
+
+## Framework challenges and epics
+
+Build using Bootstrap v3, Node v6, Angular v2.4
+
+Do not use JQuery code.
+Stick to Bootstrap style css as close as possible.
 
 
 ### [EPIC] Domain (High priority)
