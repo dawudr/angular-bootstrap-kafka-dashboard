@@ -12,9 +12,9 @@ JSConnect is a framework adopting ideas from the latest generation of data proce
 
 In respect to the terms defined above, all data sets are streamed through the system, whether they are bounded or unbounded, the only difference being that an adapter which streams through say a set of files will terminate while an adapter which streams through an ongoing event stream from a JMS broker will not terminate. Both bounded and unbounded adapters can still be stopped / restarted by an external scheduler process.  Below is an activity diagram for the general design of source adapter built with Sainsburys Connect
 
-![General Design](docs/dpp-source-adapters-general-design.png?raw=true "General Design")
+![General Design](https://github.com/dawudr/angular-bootstrap-kafka-dashboard/raw/master/docs/dpp-source-adapters-general-design.png "General Design")
 
 
 ## Current Source Adapters Landscape
 
-![Data domain Ingestion Pipelines](docs/dpp-source-adapters-general-design.png?raw=true "Data domain Ingestion Pipelines")
+![Data domain Ingestion Pipelines](https://github.com/dawudr/angular-bootstrap-kafka-dashboard/raw/master/docs/JSConnect%20Landscape.png "Data domain Ingestion Pipelines")
