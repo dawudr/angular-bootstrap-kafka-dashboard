@@ -47,7 +47,7 @@ For storeslocation from the storeslocations.conf file create a topic…..
 
 Then in the docker Kafka vm:
 Get the port configured in Zookeeper
-``
+```
 /opt/kafka/config/zooker.properties
 ```
 
