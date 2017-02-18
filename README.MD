@@ -30,6 +30,36 @@ Do not use JQuery code.
 Stick to Bootstrap style css as close as possible.
 
 
+## Docker
+
+There is a docker image to run Kafka broker on your localhost:2181.
+To run install docker on your computer. Then run the following commands.
+
+```
+docker-compose up
+docker-compose down
+docker-compose up
+docker ps
+docker exec -it dppsourceadapters_kafka_1 bash
+```
+
+For storeslocation from the storeslocations.conf file create a topic…..
+
+Then in the docker Kafka vm:
+Get the port configured in Zookeeper
+``
+/opt/kafka/config/zooker.properties
+```
+
+Run the consumer giving topic…..
+```
+/opt/kafka_2.10-0.9.0.1/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic stores
+```
+
+The JSConnect source adpaters code will need to be run to send message to the store topic. We need to write some code to send mock messages to this topic.
+
+
+
 ### [EPIC] Domain (High priority)
 
 Page to show live pie charts of percentage completion for each data domain status. We should try get status from Kafka broker.
